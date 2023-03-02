@@ -54,8 +54,6 @@ var audiofiles = [
   "https://acf.qoom.space/sounds/launchpad/soundfx36.mp3",
 ];
 
-// 6, 16
-
 // Create a new Howl object for each time
 var soundEffects = audiofiles.map(function (soundfile) {
   var sound = new Howl({
