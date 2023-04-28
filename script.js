@@ -1,11 +1,3 @@
-function handleMouseUp() {
-  // Add code here
-}
-
-function handleMouseDown() {
-  // Add code here
-}
-
 // Select all buttons and store inside the variable
 var buttons = document.querySelectorAll("button");
 buttons.forEach(function (btn, index) {
@@ -68,7 +60,7 @@ function playLPSound(e) {
   var thisbutton = this;
   var i = parseInt(thisbutton.getAttribute("sound"));
   thisbutton.classList.add("pressed");
-  if (!soundEffects[i].playing()) {
+  if (soundEffects[i].playing() != true) {
     soundEffects[i].play();
   }
 }
